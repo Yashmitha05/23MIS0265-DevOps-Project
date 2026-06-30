@@ -33,7 +33,7 @@ exit /b 0
 
         stage('Run Docker Container') {
             steps {
-                bat 'docker run -d --name %CONTAINER_NAME% -p 8080:80 %IMAGE_NAME%'
+                bat 'docker run -d --name %CONTAINER_NAME% -p 8085:80 %IMAGE_NAME%'
             }
         }
 
